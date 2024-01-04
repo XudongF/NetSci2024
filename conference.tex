@@ -23,54 +23,29 @@
 
 
 % Enter title here
-\title{Welcome to NetSci 2024}
+\title{A Regional Spatial Graph Convolutional Neural Network (RSGCN) for Spatially Embedded Network Modeling}
 \author{
     % Enter author(s) here
-    A. Allard,\textsuperscript{1}
-    L. H\'ebert-Dufresne,\textsuperscript{2}
-    J. Lovato,\textsuperscript{2}
-    A. Patania,\textsuperscript{2}
-    G. St-Onge,\textsuperscript{3}
+    Xudong Fan\textsuperscript{1}
     and
-    J.-G. Young\textsuperscript{2}
+    Jürgen Hackl,\textsuperscript{1}
 }
 {
     % Enter affiliation(s) here
-    1. Universit\'e Laval, Qu\'ebec, Canada\\
-    2. University of Vermont, Burlington, VT, USA\\
-    3. Northeastern University, Boston, MA, USA
+    1. Princeton University, Princeton, NJ, USA\\
 }
 
 
 
 % Enter abstract here. Please keep everything within one page.
-It is an honor and pleasure to invite the network science community to NetSci 2024 in Québec City from June 16th to 21st 2024.
-
-Québec City has a rich history, mix of culture, and sense of community that reflects our field in many ways. Founded in 1608, the city is famous for its European character and magnificent landscapes, which make it a highly valued and internationally recognized tourist destination. Québec City also proudly appears on UNESCO’s World Heritage List. The Québec City Convention Centre is located in the heart of the City by the historic district of Old Québec. Many scientific and artistic projects were born in the surrounding world‐class hotels, quaint restaurants, storied breweries, coffee shops, and green parks.
-
-As always, NetSci 2024 will be the flagship conference of the Network Science Society and will provide an unmatched venue for sharing and discussing discoveries, ideas, and emerging problems in network science. The conference program will be broad, covering the many ways in which networks shape our world, including social networks, epidemics, ecology, neuroscience, and artificial intelligence.
-
-The local, program and advisory committees are working to prepare an exciting and outstanding conference. Québec has a special place in the heart of many members of our community, and we can’t wait to share this unique city with new and old friends.
-
-We look forward to welcoming you for NetSci 2024 in the beautiful city of Québec!
-
-
-
-\bigskip
-{\small
-    \noindent[1] You may add a reference.\\
-    \noindent[2] You may add a reference.\\
-    \noindent[3] You may add a reference.
-}
-
+Network modeling provides a structured and abstract representation of real-world infrastructure systems, such as road networks and power networks. It has also enabled various analyses and optimizations for infrastructure systems management. In order to accurately model critical infrastructure networks and generate realistic network data, this study proposed a regional spatial graph convolutional network (RSGCN) for network connection prediction. Unlike traditional graph theory-based models which assume the graphs are independent of the space, the proposed method assumes the critical infrastructure are spatially embedded networks. The spatial information of the infrastructure has been considered in the network modeling process and thereby achieved a higher model accuracy. To test and evaluate the performance of the proposed model, three graph datasets were used for training and validating purposes, including a synthetic graph dataset, a real-world road network, and a real-world power network. The modeling results of RSGCN were then compared to those of two other geometric deep learning models, GraphSAGE and Spatial Graph Convolutional Network (SGCN). It was found that the proposed RSGCN outperformed the weakest model by 6.65\%, 37\%, and 59\%, respectively, regarding the F1 score in the three datasets. The proposed model also predicted a more accurate edge length distribution, node degree distribution, and number of component distribution, compared to the other models. The proposed method is the first variant of graph convolutional networks (GCNs) that can take regional spatial information into account and can be deployed for modeling critical infrastructure networks.
 
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\textwidth]{NETSCI-2024_web_4000X1000.jpg}
-    \caption{\textbf{Abstract must include a figure.} NetSci 2024's web banner.}
+    \includegraphics[width=0.6\textwidth]{RSGCN.png}
+    \caption{\textbf{The Proposed RSGCN Architecture}}
 \end{figure}
-
 
 
 % *************************************
