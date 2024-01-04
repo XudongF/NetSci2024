@@ -38,13 +38,28 @@
 
 
 % Enter abstract here. Please keep everything within one page.
-Network modeling provides a structured and abstract representation of real-world infrastructure systems, such as road networks and power networks. It has also enabled various analyses and optimizations for infrastructure systems management. In order to accurately model critical infrastructure networks and generate realistic network data, this study proposed a regional spatial graph convolutional network (RSGCN) for network connection prediction. Unlike traditional graph theory-based models which assume the graphs are independent of the space, the proposed method assumes the critical infrastructure are spatially embedded networks. The spatial information of the infrastructure has been considered in the network modeling process and thereby achieved a higher model accuracy. To test and evaluate the performance of the proposed model, three graph datasets were used for training and validating purposes, including a synthetic graph dataset, a real-world road network, and a real-world power network. The modeling results of RSGCN were then compared to those of two other geometric deep learning models, GraphSAGE and Spatial Graph Convolutional Network (SGCN). It was found that the proposed RSGCN outperformed the weakest model by 6.65\%, 37\%, and 59\%, respectively, regarding the F1 score in the three datasets. The proposed model also predicted a more accurate edge length distribution, node degree distribution, and number of component distribution, compared to the other models. The proposed method is the first variant of graph convolutional networks (GCNs) that can take regional spatial information into account and can be deployed for modeling critical infrastructure networks.
+
+The functional behaviors of large-scale systems can often be interpreted as complex networks. However, such complex networks are often difficult to observe directly in the real world [1]. For example, social networks and social influence are difficult to obtain despite the wide availability of online data [2]. The networks of epidemic transmission are also difficult to observe directly [3]. Although previous studies have employed a wide range of graph theories for network modeling, the spatial aspects of these graphs are often overlooked. Many real-world systems, such as transportation infrastructure and biological systems, are influenced by spatial and physical constraints[4]. Only recently have researchers begun to explore the modeling of complex networks while considering their spatial information [5].
+
+To model such spatially embedded networks, this study proposed a regional spatial graph convolutional network (RSGCN) for network connection prediction. Unlike traditional graph theory-based models which assume the graphs are independent of the space, the proposed method is developed for systems that are embedded in a spatial space. The spatial information of the systems has been considered in the network modeling process and thereby achieved a higher model accuracy. To test and evaluate the performance of the proposed model, three graph datasets were used for training and validating purposes, including a synthetic graph dataset, a real-world road network, and a real-world river network. The modeling results of RSGCN were then compared to those of two other geometric deep learning models, GraphSAGE and Spatial Graph Convolutional Network (SGCN).
+
+Our results indicate that the proposed RSGCN outperformed the weakest model by 6.65\%, 37\%, and 59\%, respectively, regarding the F1 score in all three network datasets. The proposed model also predicted a more accurate edge length distribution, node degree distribution, and number of component distribution, compared to the other models. The proposed method is the first variant of graph convolutional networks (GCNs) that can consider regional spatial information. It is also the first time using a geometric deep learning model for spatially embedded network modeling.
+
+
+\bigskip
+{\small
+    \noindent[1] Peixoto and Tiago P. (2019) {Network {{Reconstruction}} and {{Community Detection}} from {{Dynamics}}}, {Physical Review Letters} \\
+    \noindent[2] {Bakshy, Eytan and Rosenn, Itamar and Marlow, Cameron and Adamic, Lada} (2012), {The Role of Social Networks in Information Diffusion}, {Proceedings of the 21st International Conference on {{World Wide Web}}}\\
+    \noindent[3] {Keeling, Matt J. and Rohani, Pejman}(2002),{Estimating Spatial Coupling in Epidemiological Systems: A Mechanistic Approach},{Ecology Letters}\\
+    \noindent[4] {Barnett, L. and Di Paolo, E. and Bullock, S.} (2007), {Spatially Embedded Random Networks},{Physical Review E}\\
+    \noindent[5] {Hackl, J{\"u}rgen and Adey, Bryan T}(2019), {Modelling Multi-Layer Spatially Embedded Random Networks}, {Journal of Complex Networks}\\
+}
 
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.6\textwidth]{RSGCN.png}
-    \caption{\textbf{The Proposed RSGCN Architecture}}
+    \includegraphics[width=0.5\textwidth]{RSGCN.png}
+    \caption{The Proposed RSGCN Architecture}
 \end{figure}
 
 
